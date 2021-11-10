@@ -1,0 +1,51 @@
+<aura:component controller="AuraReportChartController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName" access="global" >
+    <!-- load chart js library from static resource-->
+    <ltng:require scripts="{!$Resource.Chart_JS}" afterScriptsLoaded="{!c.scriptsLoaded}" />
+    <aura:attribute name="chartObj" type="object" access="public"/>
+    <aura:attribute name="isChartReady" type="Boolean" default="false"/>
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:attribute name="showSpinner" type="boolean" default="false"/>
+    <aura:attribute name="chartId" type="string" default="denaliChart"/>
+    <aura:attribute name="selectedReport" type="string" default=""/>
+    <aura:attribute name="selectedChartType" type="string" default=""/>
+    <aura:attribute name="chartTitle" type="String" default="Dynamic Chart" />
+    <aura:attribute name="showFooter" type="Boolean" default="true" />
+    <aura:attribute name="primaryRed" type="Integer" default="38" />
+    <aura:attribute name="primaryGreen" type="Integer" default="169" />
+    <aura:attribute name="primaryBlue" type="Integer" default="225" />
+    <article class="slds-card">
+        <div id="bodypart" style="background-color:white;max-width=90% !important;">
+            <aura:if isTrue="{!v.ShowSpinner}">
+                <lightning:spinner alternativeText="Loading" size="medium"/>
+            </aura:if>
+            <aura:if isTrue="{!v.chartTitle.length > 1}">
+                <div class="slds-page-header">
+                    <lightning:icon iconName="utility:chart" alternativeText="Chart" size="small"/>
+                    &nbsp;&nbsp;<b>{!v.chartTitle}</b>
+                </div>
+            </aura:if>
+                
+            <div class="slds-card slds-card__body" style="max-width: 90% !important;align:center;">
+                <div aura:id="chartContainer" style=" " value="{!v.chartId}">
+                    <canvas aura:id="denaliChart" id="{!v.chartId}"/>
+                </div>
+            </div>
+        </div>
+        <aura:if isTrue="{!v.showFooter}">
+            <div class="slds-page-header slds-p-top_small">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size--6-of-12">
+                        Powered By: <a href="https://www.chartjs.org/">ChartJS</a>
+                    </div>
+                    <div class="slds-col slds-size--3-of-12">
+                    </div>
+                    <div class="slds-col slds-size--3-of-12">
+                        <b> <a href="https://addepar.com" target="_blank">Addepar</a></b>
+                    </div>
+                </div>
+            </div>
+        </aura:if>
+            
+    </article>
+</aura:component>

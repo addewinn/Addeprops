@@ -1,0 +1,40 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+	<aura:attribute name="title" type="String" description="The Title for the page header" default="AddeProps Hero Board"/>
+	<aura:attribute name="description" type="String" description="The Description for the page header" default="Sharing the love!"/>
+	<aura:attribute name="iconName" type="String" default="custom:custom1" required="false" description="The lightning icon type and name for header"/>
+	<aura:attribute name="iconAltText" type="String" default="AddeProps Hero Board" required="false" description="The alternative text for the icon"/>
+	<aura:attribute name="iconTitle" type="String" default="AddeProps Hero Board" required="false" description="The title for the icon"/>
+    <div class="slds-page-header slds-page-header_record-home">
+		<div class="slds-page-header__row">
+			<div class="slds-page-header__col-title">
+				<div class="slds-media">
+					<div class="slds-media__figure">
+						<span class="slds-avatar slds-avatar_circle">
+							<lightning:icon iconName="{!v.iconName}" alternativeText="{!v.iconAltText}" title="{!v.iconTitle}"/>
+						</span>
+					</div>
+					<div class="slds-media__body">
+						<div class="slds-page-header__name">
+							<div class="slds-page-header__name-title">
+								<h1>
+									<span class="slds-page-header__title slds-truncate" title="{!v.title}">{!v.title}</span>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slds-page-header__col-actions">
+				<div class="slds-page-header__controls">
+					<div class="slds-page-header__control">
+						<ul class="slds-button-group-list">
+							<li>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aura:component>

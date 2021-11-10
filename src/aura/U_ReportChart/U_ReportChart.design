@@ -1,0 +1,19 @@
+<design:component label="Denali Report Chart">
+    <design:attribute 
+                      name="chartTitle" 
+                      label="Chart Title" 
+                      description="Provide a title for this component" 
+                      required="true"/>
+    <design:attribute 
+                      name="selectedReport" 
+                      label="Chart Data" 
+                      description="Select a report to use for the data in this chart" 
+                      required="true"
+                      datasource="apex://AuraReportChartReportPicklist"/>
+    <design:attribute 
+                      name="selectedChartType" 
+                      label="Chart Type" 
+                      description="Select a chart type for this component"
+                      required="true"
+                      datasource="apex://AuraReportChartTypePicklist"/>
+</design:component>

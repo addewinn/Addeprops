@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>Documentation</aura:description>
+	<aura:example name="Dashboard with 3 columns" ref="c:U_Dashboard" label="Dashboard - 3 columns">
+		Example Description
+	</aura:example>
+</aura:documentation>

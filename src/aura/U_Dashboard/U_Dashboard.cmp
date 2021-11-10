@@ -1,0 +1,97 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" >
+	<aura:attribute name="dashboardTitle" type="String" default="Hero Board" />
+	<aura:attribute name="reportOneId" type="String" default="00O5f000004NwPDEA0" />
+	<aura:attribute name="reportOneChartType" type="String" default="bar" />
+    <aura:attribute name="reportOneTitle" type="String" default="Props Received" />
+    <aura:attribute name="reportOneColumnSpan" type="String" default="12" />
+	<aura:attribute name="reportTwoId" type="String" default="00O5f000004NwPIEA0" />
+	<aura:attribute name="reportTwoChartType" type="String" default="pie" />
+    <aura:attribute name="reportTwoTitle" type="String" default="Props Sent" />
+    <aura:attribute name="reportTwoColumnSpan" type="String" default="12" />
+	<aura:attribute name="reportThreeId" type="String" default="00O5f000004NwPJEA0" />
+	<aura:attribute name="reportThreeChartType" type="String" default="doughnut" />
+    <aura:attribute name="reportThreeTitle" type="String" default="Popular Emojis" />
+    <aura:attribute name="reportThreeColumnSpan" type="String" default="12" />
+	<aura:attribute name="reportFourId" type="String" default="00O5f000004NwPKEA0" />
+	<aura:attribute name="reportFourChartType" type="String" default="line" />
+    <aura:attribute name="reportFourTitle" type="String" default="Emojis by Sender" />
+    <aura:attribute name="reportFourColumnSpan" type="String" default="12" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<article class="slds-card slds-p-around_small">
+		<div class="slds-card__header slds-grid">
+			<header class="slds-media slds-media_center slds-has-flexi-truncate">
+				<div class="slds-media__figure">
+					<span class="slds-icon_container" title="{!v.dashboardTitle}">
+						<lightning:icon iconName="standard:dashboard" alternativeText="{!v.dashboardTitle}" size="medium" title="{!v.dashboardTitle}" />
+						<span class="slds-assistive-text">{!v.dashboardTitle}</span>
+					</span>
+				</div>
+				<div class="slds-media__body">
+					<h2 class="slds-card__header-title">
+						<span>{!v.dashboardTitle}</span>
+					</h2>
+				</div>
+				<div class="slds-no-flex">
+					<!--<lightning:button variant="brand" label="Refresh" title="Refresh" onclick="{! c.doInit }" />-->
+				</div>
+			</header>
+		</div>
+		<div class="slds-card__body">
+			<div class="slds-grid slds-gutters slds-wrap slds-grid_pull-padded-medium">
+				<div class="{!'slds-col slds-size_' + v.reportOneColumnSpan + '-of-12 slds-p-horizontal_medium'}">
+					<article class="slds-card">
+						<div class="slds-card__body">
+							<c:U_ReportChart 
+                                             selectedChartType="{!v.reportOneChartType}" 
+                                             selectedReport="{!v.reportOneId}" 
+                                             chartTitle="{!v.reportOneTitle}" 
+                                             showFooter="false" 
+                                             primaryRed="37" 
+                                             primaryGreen="114" 
+                                             primaryBlue="159"/>
+						</div>
+					</article>
+				</div>
+				<div class="{!'slds-col slds-size_' + v.reportTwoColumnSpan + '-of-12 slds-p-horizontal_medium'}">
+					<article class="slds-card">
+						<div class="slds-card__body">
+							<c:U_ReportChart 
+                                             selectedChartType="{!v.reportTwoChartType}" 
+                                             selectedReport="{!v.reportTwoId}" 
+                                             chartTitle="{!v.reportTwoTitle}" 
+                                             showFooter="false"/>
+						</div>
+					</article>
+				</div>
+				<div class="{!'slds-col slds-size_' + v.reportThreeColumnSpan + '-of-12 slds-p-horizontal_medium'}">
+					<article class="slds-card">
+						<div class="slds-card__body">
+							<c:U_ReportChart 
+                                             selectedChartType="{!v.reportThreeChartType}" 
+                                             selectedReport="{!v.reportThreeId}" 
+                                             chartTitle="{!v.reportThreeTitle}" 
+                                             showFooter="false" 
+                                             primaryRed="37" 
+                                             primaryGreen="159" 
+                                             primaryBlue="99"/>
+						</div>
+					</article>
+				</div>
+				<div class="{!'slds-col slds-size_' + v.reportFourColumnSpan + '-of-12 slds-p-horizontal_medium'}">
+					<article class="slds-card">
+						<div class="slds-card__body">
+							<c:U_ReportChart 
+                                             selectedChartType="{!v.reportFourChartType}" 
+                                             selectedReport="{!v.reportFourId}" 
+                                             chartTitle="{!v.reportFourTitle}" 
+                                             showFooter="false" 
+                                             primaryRed="232" 
+                                             primaryGreen="115" 
+                                             primaryBlue="26"/>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</article>
+</aura:component>

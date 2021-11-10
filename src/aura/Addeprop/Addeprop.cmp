@@ -1,0 +1,35 @@
+<aura:component controller="AddepropController" access="GLOBAL">
+	<aura:attribute name="propRecord" type="AddePropController.AddeProp" default="{}"/>
+	<aura:handler name="change" value="{!v.propRecord}" action="{!c.doInit}" />
+	<article class="slds-card slds-card_boundary slds-p-around_small" style="background-color:#ffffff;">
+		<article class="slds-tile slds-media">
+			<div class="slds-media__figure">
+				<span class="slds-icon_container" title="description of icon when needed">
+					<lightning:icon iconName="custom:custom11" title="custom11" />
+				</span>
+			</div>
+			<div class="slds-media__body">
+				<h2 class="slds-tile__title slds-truncate slds-text-heading_medium" title="{!v.propRecord.reason}">
+					<a href="#">{!v.propRecord.reason}</a>
+				</h2>
+				<div class="slds-tile__detail">
+					<dl class="slds-list_horizontal slds-wrap">
+						<p>posted by {!v.propRecord.sender}</p>
+					</dl>
+					<div class="slds-card__body slds-m-around_x-small">
+						<div class="slds-form-element slds-form-element__control slds-has-divider--bottom">
+							<div class="slds-grid slds-gutters slds-wrap">
+								<div class="slds-col slds-size_6-of-12 slds-m-around__xxx-small">
+									<c:AddepropRecipients propRecord="{!v.propRecord}" />
+								</div>
+								<div class="slds-col slds-size_6-of-12 slds-m-around__x-small">
+									<c:AddepropEmojis propRecord="{!v.propRecord}"/>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</article>	
+	</article>
+</aura:component>

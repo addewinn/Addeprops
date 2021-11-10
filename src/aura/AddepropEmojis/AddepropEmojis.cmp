@@ -1,0 +1,22 @@
+<aura:component access="GLOBAL" controller="AddepropController">
+	<aura:attribute name="propRecord" type="AddePropController.AddeProp" default="{}"/>
+	<aura:handler name="change" value="{!v.propRecord}" action="{!c.doInit}" />
+	<div class="slds-grid slds-gutters slds-wrap">
+    	<div class="slds-p-around_x-small slds-theme-shade">
+        	<div class="slds-grid slds-gutters slds-wrap slds-grid_align-spread slds-grid_vertical-align-top">
+				<aura:if isTrue="{!!v.propRecord.emojis > 0}">
+					<div class="slds-col slds-size_12-of-12">
+						<c:EmojiUtil />
+					</div>
+					<aura:set attribute="else">
+						<aura:iteration items="{!v.propRecord.emojis}" var="item">
+							<div class="{!'slds-col slds-size_1-of-'+ v.productRecord.emojis.length + ' slds-p-around_xxx-small'}">
+								<c:EmojiUtil emojiCode="{!item.character}" emojiType="{!item.type}"/>
+							</div>
+						</aura:iteration>
+					</aura:set>
+				</aura:if>
+			</div>
+		</div>
+	</div>
+</aura:component>

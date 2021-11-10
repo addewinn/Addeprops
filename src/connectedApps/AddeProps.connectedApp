@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>kwinn.12301@gmail.com</contactEmail>
+    <ipRanges>
+        <description>Jay Nix</description>
+        <end>66.188.179.101</end>
+        <start>66.188.179.101</start>
+    </ipRanges>
+    <label>AddeProps</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/success</callbackUrl>
+        <consumerKey>3MVG9p1Q1BCe9GmDCSqsPRs9kiePb5a9qH4lTSVMJ6xNxqo9OvpOPj7yd83C81wO9vFdCA1dyGEH6LcS30Qsm</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

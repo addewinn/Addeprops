@@ -1,0 +1,89 @@
+<design:component label="Denali Dashboard">
+	<design:attribute 
+                      name="dashboardTitle" 
+                      label="Dashboard Title" 
+                      description="Provide a title for this dashboard" 
+                      placeholder="Provide a Title"
+                      required="true"/>
+    
+    <design:attribute 
+                      name="reportOneTitle" 
+                      label="Chart 1 Title" 
+                      description="Provide a title for the first chart in this dashboard" 
+                      placeholder="Provide a Title"
+                      required="true"/>
+    <design:attribute 
+                      name="reportOneId" 
+                      label="Chart 1 Data" 
+                      description="Select a report to use for the data in the first chart in this dashboard" 
+                      required="true"
+                      datasource="apex://AuraReportChartReportPicklist"/>
+    <design:attribute 
+                      name="reportOneChartType" 
+                      label="Chart 1 Type" 
+                      description="Select a chart type for the first chart in this dashboard"
+                      required="true"
+                      default="bar"
+                      datasource="apex://AuraReportChartTypePicklist"/>
+    
+    <design:attribute 
+                      name="reportTwoTitle" 
+                      label="Chart 2 Title" 
+                      description="Provide a title for the second chart in this dashboard" 
+                      placeholder="Provide a Title"
+                      required="true"/>
+    <design:attribute 
+                      name="reportTwoId" 
+                      label="Chart 1 Data" 
+                      description="Select a report to use for the data in the second chart in this dashboard" 
+                      required="true"
+                      datasource="apex://AuraReportChartReportPicklist"/>
+    <design:attribute 
+                      name="reportTwoChartType" 
+                      label="Chart 2 Type" 
+                      description="Select a chart type for the second chart in this dashboard"
+                      required="true"
+                      default="doughnut"
+                      datasource="apex://AuraReportChartTypePicklist"/>
+    
+    <design:attribute 
+                      name="reportThreeTitle" 
+                      label="Chart 3 Title" 
+                      description="Provide a title for the third chart in this dashboard" 
+                      placeholder="Provide a Title"
+                      required="true"/>
+    <design:attribute 
+                      name="reportThreeId" 
+                      label="Chart 3 Data" 
+                      description="Select a report to use for the data in the third chart in this dashboard" 
+                      required="true"
+                      datasource="apex://AuraReportChartReportPicklist"/>
+    <design:attribute 
+                      name="reportThreeChartType" 
+                      label="Chart 3 Type" 
+                      description="Select a chart type for the third chart in this dashboard"
+                      required="true"
+                      default="polar area"
+                      datasource="apex://AuraReportChartTypePicklist"/>
+    
+    <design:attribute 
+                      name="reportFourTitle" 
+                      label="Chart 4 Title" 
+                      description="Provide a title for the fourth chart in this dashboard" 
+                      placeholder="Provide a Title"
+                      required="true"/>
+    <design:attribute 
+                      name="reportFourId" 
+                      label="Chart 4 Data" 
+                      description="Select a report to use for the data in the fourth chart in this dashboard" 
+                      required="true"
+                      datasource="apex://AuraReportChartReportPicklist"/>
+    <design:attribute 
+                      name="reportFourChartType" 
+                      label="Chart f Type" 
+                      description="Select a chart type for the fourth chart in this dashboard"
+                      required="true"
+                      default="line"
+                      datasource="apex://AuraReportChartTypePicklist"/>
+    
+</design:component>

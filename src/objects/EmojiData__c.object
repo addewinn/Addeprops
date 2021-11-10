@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>AddedIn__c</fullName>
+        <description>Emoji version in which this codepoint/sequence was added (previously Unicode version).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Emoji version in which this codepoint/sequence was added (previously Unicode version).</inlineHelpText>
+        <label>Added In</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>Category group names.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Category group names.</inlineHelpText>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Undefined</fullName>
+                    <default>true</default>
+                    <label>Undefined</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HasAppleImage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A flag for whether the given image set has an image (named by the image prop) available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A flag for whether the given image set has an image (named by the image prop) available.</inlineHelpText>
+        <label>Has Apple Image</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasFacebookImage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A flag for whether the given image set has an image (named by the image prop) available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A flag for whether the given image set has an image (named by the image prop) available.</inlineHelpText>
+        <label>Has Facebook Image</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasGoogleImage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A flag for whether the given image set has an image (named by the image prop) available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A flag for whether the given image set has an image (named by the image prop) available.</inlineHelpText>
+        <label>Has Google Image</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasTwitterImage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A flag for whether the given image set has an image (named by the image prop) available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A flag for whether the given image set has an image (named by the image prop) available.</inlineHelpText>
+        <label>Has Twitter Image</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Image__c</fullName>
+        <description>The name of the image file.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the image file.</inlineHelpText>
+        <label>Image</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NonQualified__c</fullName>
+        <description>For emoji that also have usage without a variation selector, that version is included here (otherwise is null).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For emoji that also have usage without a variation selector, that version is included here (otherwise is null).</inlineHelpText>
+        <label>Non Qualified</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SheetX__c</fullName>
+        <description>The position of the image in the spritesheets</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The position of the image in the spritesheets</inlineHelpText>
+        <label>Sheet X</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SheetY__c</fullName>
+        <description>The position of the image in the spritesheets</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The position of the image in the spritesheets</inlineHelpText>
+        <label>Sheet Y</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShortName__c</fullName>
+        <description>The commonly-agreed upon short name for the image, as supported in campfire, github etc via the :colon-syntax:</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The commonly-agreed upon short name for the image, as supported in campfire, github etc via the :colon-syntax:</inlineHelpText>
+        <label>Short Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShortNames__c</fullName>
+        <description>An array of all the known short names.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An array of all the known short names.</inlineHelpText>
+        <label>Short Names</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SortOrder__c</fullName>
+        <description>Global sorting index for all emoji, based on Unicode CLDR ordering.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Global sorting index for all emoji, based on Unicode CLDR ordering.</inlineHelpText>
+        <label>Sort Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subcategory__c</fullName>
+        <description>Sub-category group names.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sub-category group names.</inlineHelpText>
+        <label>Subcategory</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Undefined</fullName>
+                    <default>true</default>
+                    <label>Undefined</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Text__c</fullName>
+        <description>An ASCII version of the emoji (e.g. :)), or null where none exists.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An ASCII version of the emoji (e.g. :)), or null where none exists.</inlineHelpText>
+        <label>Text</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Texts__c</fullName>
+        <description>An array of ASCII emoji that should convert into this emoji. Each ASCII emoji will only appear against a single emoji entry.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An array of ASCII emoji that should convert into this emoji. Each ASCII emoji will only appear against a single emoji entry.</inlineHelpText>
+        <label>Texts</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Unified__c</fullName>
+        <description>The Unicode codepoint, as 4-5 hex digits. Where an emoji needs 2 or more codepoints, they are specified like 1F1EA-1F1F8. For emoji that need to specifiy a variation selector (-FE0F), that is included here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Unicode codepoint, as 4-5 hex digits. Where an emoji needs 2 or more codepoints, they are specified like 1F1EA-1F1F8. For emoji that need to specifiy a variation selector (-FE0F), that is included here.</inlineHelpText>
+        <label>Unified</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>au__c</fullName>
+        <description>The legacy Unicode codepoints used by various mobile vendors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The legacy Unicode codepoints used by various mobile vendors.</inlineHelpText>
+        <label>au</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>docomo__c</fullName>
+        <description>The legacy Unicode codepoints used by various mobile vendors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The legacy Unicode codepoints used by various mobile vendors.</inlineHelpText>
+        <label>docomo</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>google__c</fullName>
+        <description>The legacy Unicode codepoints used by various mobile vendors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The legacy Unicode codepoints used by various mobile vendors.</inlineHelpText>
+        <label>google</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>softbank__c</fullName>
+        <description>The legacy Unicode codepoints used by various mobile vendors.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The legacy Unicode codepoints used by various mobile vendors.</inlineHelpText>
+        <label>softbank</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Emoji Data</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Data</fullName>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Subcategory__c</columns>
+        <columns>ShortName__c</columns>
+        <columns>ShortNames__c</columns>
+        <columns>SortOrder__c</columns>
+        <columns>Unified__c</columns>
+        <columns>SheetX__c</columns>
+        <columns>SheetY__c</columns>
+        <columns>Image__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Data</label>
+    </listViews>
+    <nameField>
+        <label>Emoji Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Emojis Data</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

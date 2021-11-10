@@ -1,0 +1,8 @@
+<aura:documentation>
+	<aura:description>
+		Documentation
+	</aura:description>
+	<aura:example name="Line Chart" ref="c:U_ReportChart" label="Denali Report Chart">
+		This example displays a line chart using Chart.js 
+	</aura:example>
+</aura:documentation>

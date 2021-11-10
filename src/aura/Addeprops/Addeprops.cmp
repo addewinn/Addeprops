@@ -1,0 +1,30 @@
+<aura:component controller="AddepropController" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="GLOBAL">
+	<aura:attribute name="data" type="AddePropController.AddeProp[]" default="{}" />
+	<aura:attribute name="error" type="String" default="Something went wrong. Check the developer console for logs." />
+	<aura:attribute name="message" type="Object" default="{}" access="global"/>
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:handler name="change" value="{!v.message}" action="{!c.doInit}"/>
+	<!--<c:U_EmpApi message="{!v.message}" aura:id="addePropListener"/>-->
+	<article class="slds-card slds-card_boundary slds-p-around_small" style="background-color:whitesmoke;">
+		<div class="slds-grid slds-gutters slds-wrap">
+			<div class="slds-col slds-size_1-of-2">
+				<aura:if isTrue="{!v.error.length == 0}">
+					{!v.error}
+					Records returned = {!v.data.length}
+					<aura:set attribute="else">
+						<div class="slds-scrollable_y" style="height:80vh;width:auto;">
+							<aura:iteration items="{!v.data}" var="item">
+								<c:Addeprop propRecord="{!item}"/>
+							</aura:iteration>
+						</div>
+					</aura:set>
+				</aura:if>
+			</div>
+			<div class="slds-col slds-size_1-of-2">
+				<div class="slds-scrollable_y" style="height:80vh;width:auto;">
+					<c:U_Dashboard />
+				</div>
+			</div>
+		</div>
+	</article>
+</aura:component>

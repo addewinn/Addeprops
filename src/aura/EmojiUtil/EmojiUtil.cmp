@@ -1,0 +1,13 @@
+<aura:component access="GLOBAL" implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName">
+	<aura:attribute name="emojiCode" type="String" default="1F44D" description="The Unicode for the emoji" />
+	<aura:attribute name="emojiImage" type="String" default="" />
+	<aura:attribute name="emojiType" type="String" default="Emoji" />
+	<aura:attribute name="emojiCategory" type="String" default="" />
+	<aura:attribute name="emojiSubcategory" type="String" default="" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<article class="slds-card slds-p-around_small" style="background-color:#ffffff;">
+		<div class="slds-item_detail slds-truncate" title="{!v.emojiType}" style="font-size: 4em;">
+			{!v.emojiImage}
+		</div>
+	</article>
+</aura:component>
