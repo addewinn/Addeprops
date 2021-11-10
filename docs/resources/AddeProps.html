@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="id-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AddeProps</title>
+        <script src="https://dynotrader-developer-edition.na163.force.com/lightning/lightning.out.js"></script>
+    <script>
+        function init() {
+            $Lightning.use("c:AddepropOut", function() {
+                $Lightning.createComponent("c:Addeprops", {
+                	
+                    },
+                    "props",
+                    function(cmp) {
+                        console.log("LightningOutExample.app lightning out component loaded");
+                    }
+                );
+            },
+            'https://dynotrader-developer-edition.na163.force.com/addeprops'
+            /* access/refresh token or session Id */
+            );
+            
+        }
+     </script>
+    </head>
+    <body onLoad="init()">
+        <div id="props"></div>
+    </body>
+</html>
