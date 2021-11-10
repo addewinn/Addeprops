@@ -7,7 +7,6 @@
         <members>AuraReportChartTypePicklist</members>
         <members>Emoji</members>
         <members>ErrorLogTriggerDispatcher</members>
-        <members>GoogleTagManagerController</members>
         <members>InvokePlatformEvent</members>
         <name>ApexClass</name>
     </types>
@@ -21,24 +20,19 @@
     </types>
     <types>
         <members>AddeProps</members>
-        <members>DynoTrader</members>
         <name>ConnectedApp</name>
     </types>
     <types>
         <members>Logo_Dark</members>
-        <members>plasmaglobe_M1DGr5O</members>
         <name>ContentAsset</name>
     </types>
     <types>
-        <members>https_dynotrader_online</members>
-        <members>https_dynotrader_online1</members>
         <members>https_force_com</members>
         <members>https_salesforce_com</members>
         <name>CorsWhitelistOrigin</name>
     </types>
     <types>
         <members>AddeProps</members>
-        <members>GoogleMarketingPlatform</members>
         <name>CustomApplication</name>
     </types>
     <types>
@@ -49,7 +43,6 @@
         <members>AddeProp__c</members>
         <members>EmojiData__c</members>
         <members>Emoji__c</members>
-        <members>GoogleTagManager__c</members>
         <members>NewAddeprop__e</members>
         <members>PropRecipient__c</members>
         <name>CustomObject</name>
@@ -58,7 +51,6 @@
         <members>AddeProp__c</members>
         <members>EmojiData__c</members>
         <members>Emoji__c</members>
-        <members>GoogleTagManager__c</members>
         <members>Home</members>
         <members>PropRecipient__c</members>
         <name>CustomTab</name>
@@ -66,7 +58,6 @@
     <types>
         <members>AddeProp_Record_Page</members>
         <members>AddeProps_UtilityBar</members>
-        <members>Google_Marketing_Platform_UtilityBar</members>
         <members>Home</members>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
@@ -80,7 +71,6 @@
         <members>AddeProp__c-AddeProp Layout</members>
         <members>EmojiData__c-Emoji Data Layout</members>
         <members>Emoji__c-Emoji Layout</members>
-        <members>GoogleTagManager__c-Google Tag Manager Layout</members>
         <members>PropRecipient__c-Prop Recipient Layout</members>
         <name>Layout</name>
     </types>
@@ -90,22 +80,18 @@
     </types>
     <types>
         <members>AddeProps</members>
-        <members>lightningoutexamples</members>
         <name>Network</name>
     </types>
     <types>
         <members>cbAddeProps</members>
-        <members>cblightningoutexamples</members>
         <name>NetworkBranding</name>
     </types>
     <types>
         <members>AddeProps Profile</members>
-        <members>lightningoutexamples Profile</members>
         <name>Profile</name>
     </types>
     <types>
         <members>AddeProps_Profile_profileSessionSetting1636000075035</members>
-        <members>lightningoutexamples_Profile_profileSessionSetting1636315115835</members>
         <name>ProfileSessionSetting</name>
     </types>
     <types>
