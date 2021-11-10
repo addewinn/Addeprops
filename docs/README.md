@@ -1,7 +1,7 @@
 # Addeprops
 Sharing the love.  Salesforce integration with Slack for addeprops portal and historical tracking.
 
-## Hackathon 2021
+## Hackathon Fall 2021
 
 ### Single Addeprop on Salesforce
 ![Addeprop](./media/img/DoingTheMovie.png "Doing the movie")
